@@ -36,6 +36,24 @@ cd ~/catkin_ws
 catkin_make # or <catkin build>, if you are using catkin_tools
 ```
 
+## Example of usage
+
+To run a demonstration with the vehicle with teleoperation, you can run a UUV
+simulator Gazebo scenario, such as
+
+```bash
+roslaunch uuv_descriptions ocean_waves.launch
+```
+
+and then
+
+```bash
+roslaunch desistek_saga_gazebo start_demo_teleop.launch joy_id:=0
+```
+
+The teleoperation nodes are pre-configured per default for the XBox 360
+controller.
+
 ## License
 
 SAGA ROV package is open-sourced under the Apache-2.0 license. See the
