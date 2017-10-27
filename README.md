@@ -4,7 +4,8 @@ This repository contains the robot description and necessary launch files to
 simulate the [Desistek SAGA ROV vehicle](http://www.desistek.com.tr/).
 This repository is complementary to the [Unmanned Underwater Vehicle Simulator (UUV Simulator)](https://github.com/uuvsimulator/uuv_simulator),
 an open-source project extending the simulation capabilities of the robotics
-simulator Gazebo to underwater vehicles and environments.
+simulator Gazebo to underwater vehicles and environments. For installation and
+usage instructions, please refer to the [documentation pages](https://uuvsimulator.github.io/).
 
 ## Purpose of the project
 
