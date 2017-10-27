@@ -5,10 +5,10 @@
 
     <arg name="gui_on" default="true"/>
 
-    <arg name="K" default="10.0,10.0,10.0,0.0,0.0,5.0"/>
-    <arg name="Kd" default="0.1,0.1,0.1,0.0,0.0,0.1"/>
-    <arg name="Ki" default="0.05,0.05,0.05,0.0,0.0,0.05"/>
-    <arg name="slope" default="0.05,0.05,0.05,0.0,0.0,0.05"/>
+    <arg name="K" default="5.0,5.0,5.0,0.0,0.0,5.0"/>
+    <arg name="Kd" default="10.0,13.73,2.44,0.0,0.0,3.55"/>
+    <arg name="Ki" default="0.05,0.62,0.05,0.0,0.0,0.05"/>
+    <arg name="slope" default="2.0,0.89,2.0,0.0,0.0,0.8"/>
 
     <arg name="teleop_on" default="false"/>
     <arg name="joy_id" default="0"/>
@@ -51,10 +51,10 @@
           <arg name="axis_x" value="$(arg axis_x)"/>
           <arg name="axis_y" value="$(arg axis_y)"/>
           <arg name="axis_z" value="$(arg axis_z)"/>
-          <arg name="gain_yaw" default="0.2"/>
-          <arg name="gain_x" default="0.5"/>
-          <arg name="gain_y" default="0.5"/>
-          <arg name="gain_z" default="0.5"/>
+          <arg name="gain_yaw" default="0.1"/>
+          <arg name="gain_x" default="0.2"/>
+          <arg name="gain_y" default="0.2"/>
+          <arg name="gain_z" default="0.2"/>
       </include>
     </group>
 

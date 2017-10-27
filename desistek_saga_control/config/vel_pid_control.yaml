@@ -2,7 +2,7 @@ velocity_control:
   linear_d: 0.0
   linear_i: 0.0
   linear_p: 0.5
-  linear_sat: 10.0
+  linear_sat: 50.0
   angular_d: 0.0
   angular_i: 0.0
   angular_p: 6.0
