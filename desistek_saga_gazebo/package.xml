@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>desistek_saga_gazebo</name>
-  <version>0.1.1</version>
+  <version>0.1.2</version>
   <description>Package with launch files for demonstrations with the Desistek SAGA ROV underwater vehicle</description>
 
   <maintainer email="emre.ege@desistek.com.tr">Emre Ege</maintainer>
