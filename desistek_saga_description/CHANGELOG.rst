@@ -2,8 +2,8 @@
 Changelog for package desistek_saga_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.2 (2018-07-11)
+------------------
 * FIX Path to uuv_sensor_ros_plugins
   Signed-off-by: Musa Morena Marcusso Manhaes <Musa.Marcusso@de.bosch.com>
 * CHANGE XACRO file extension for robot description
