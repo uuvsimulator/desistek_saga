@@ -2,8 +2,8 @@
 Changelog for package desistek_saga_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.3 (2018-07-11)
+------------------
 * ADD inertial_reference_frame input argument in XACRO files
   Signed-off-by: Musa Morena Marcusso Manhaes <Musa.Marcusso@de.bosch.com>
 * UPDATE Sensor plugin macros to use inertial_reference_frame argument
