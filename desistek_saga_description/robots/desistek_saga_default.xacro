@@ -17,17 +17,17 @@
 <robot name="desistek_saga" xmlns:xacro="http://www.ros.org/wiki/xacro" >
   <xacro:arg name="debug" default="0"/>
   <xacro:arg name="namespace" default="desistek_saga"/>
+  <xacro:arg name="inertial_reference_frame" default="world"/>
+
   <!-- Include the ROV macro file -->
   <xacro:include filename="$(find desistek_saga_description)/urdf/desistek_saga_base.urdf.xacro"/>
   <!-- Create the desistek_saga -->
-  <xacro:desistek_saga_base namespace="$(arg namespace)" debug="$(arg debug)"/>
+  <xacro:desistek_saga_base
+    namespace="$(arg namespace)"
+    debug="$(arg debug)"
+    inertial_reference_frame="$(arg inertial_reference_frame)"/>
 
-  <!-- Joint state publisher plugin -->
-  <gazebo>
-    <plugin name="joint_state_publisher" filename="libjoint_state_publisher.so">
-      <robotNamespace>$(arg namespace)</robotNamespace>
-      <updateRate>50</updateRate>
-    </plugin>
-  </gazebo>
+    <!-- Joint state publisher plugin -->
+    <xacro:default_joint_state_publisher namespace="$(arg namespace)" update_rate="5"/>
 
 </robot>

@@ -18,6 +18,7 @@
   <xacro:include filename="$(find uuv_descriptions)/models/common/urdf/common.urdf.xacro"/>
   <xacro:include filename="$(find uuv_sensor_ros_plugins)/urdf/sensor_snippets.xacro"/>
   <xacro:include filename="$(find desistek_saga_description)/urdf/desistek_saga_snippets.xacro"/>
+  <xacro:include filename="$(find uuv_gazebo_ros_plugins)/urdf/snippets.xacro"/>
 
   <!-- Parameters -->
   <xacro:property name="mass" value="10"/>
@@ -36,7 +37,7 @@
   <xacro:property name="visual_mesh_file" value="file://$(find desistek_saga_description)/mesh/saga.dae"/>
   <xacro:property name="collision_mesh_file" value="file://$(find desistek_saga_description)/mesh/saga.stl"/>
 
-  <xacro:macro name="desistek_saga_base" params="namespace debug">
+  <xacro:macro name="desistek_saga_base" params="namespace debug inertial_reference_frame">
 
   <link name="${namespace}/base_link">
     <inertial>
