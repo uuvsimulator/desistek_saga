@@ -2,6 +2,9 @@
 Changelog for package desistek_saga_control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.1.2 (2018-07-11)
 ------------------
 
