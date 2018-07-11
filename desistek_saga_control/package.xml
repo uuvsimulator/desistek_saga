@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>desistek_saga_control</name>
-  <version>0.1.0</version>
+  <version>0.1.1</version>
   <description>Configuration and launch files to control the Desistek SAGA ROV</description>
 
   <maintainer email="emre.ege@desistek.com.tr">Emre Ege</maintainer>
