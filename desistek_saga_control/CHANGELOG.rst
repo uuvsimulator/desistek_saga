@@ -2,6 +2,14 @@
 Changelog for package desistek_saga_control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.2.0 (2018-07-24)
+------------------
+* ADD Launch file for PID controller
+  Signed-off-by: Musa Morena Marcusso Manhaes <Musa.Marcusso@de.bosch.com>
+* FIX Default path to recording.bag
+  Signed-off-by: Musa Morena Marcusso Manhaes <Musa.Marcusso@de.bosch.com>
+* Contributors: Musa Morena Marcusso Manhaes
+
 0.1.3 (2018-07-11)
 ------------------
 
