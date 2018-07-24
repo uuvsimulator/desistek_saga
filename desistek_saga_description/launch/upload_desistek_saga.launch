@@ -19,14 +19,12 @@
 
   <arg name="mode" default="default"/>
   <arg name="namespace" default="desistek_saga"/>
-  <arg name="use_simplified_mesh" default="false"/>
   <arg name="use_ned_frame" default="false"/>
 
   <group ns="$(arg namespace)">
     <group if="$(arg use_ned_frame)">
       <param name="robot_description"
              command="$(find xacro)/xacro '$(find desistek_saga_description)/robots/desistek_saga_$(arg mode).xacro' --inorder
-                      use_simplified_mesh:=$(arg use_simplified_mesh)
                       debug:=$(arg debug)
                       namespace:=$(arg namespace)
                       inertial_reference_frame:=world_ned" />
@@ -35,7 +33,6 @@
     <group unless="$(arg use_ned_frame)">
       <param name="robot_description"
              command="$(find xacro)/xacro '$(find desistek_saga_description)/robots/desistek_saga_$(arg mode).xacro' --inorder
-                      use_simplified_mesh:=$(arg use_simplified_mesh)
                       debug:=$(arg debug)
                       namespace:=$(arg namespace)
                       inertial_reference_frame:=world" />
