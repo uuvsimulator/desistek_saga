@@ -2,6 +2,9 @@
 Changelog for package desistek_saga_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.2.0 (2018-07-24)
 ------------------
 
