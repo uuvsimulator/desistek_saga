@@ -2,8 +2,8 @@
 Changelog for package desistek_saga_control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.3.0 (2018-07-30)
+------------------
 * ADD YAML file with model parameter information
   Signed-off-by: Musa Morena Marcusso Manhaes <Musa.Marcusso@de.bosch.com>
 * ADD Launch file to start the PDC controller
