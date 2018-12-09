@@ -1,23 +1,27 @@
 <?xml version="1.0"?>
-<package>
+<package format="2">
   <name>desistek_saga_description</name>
   <version>0.3.0</version>
   <description>The robot description files for the Desistek SAGA ROV underwater vehicle</description>
 
   <maintainer email="emre.ege@desistek.com.tr">Emre Ege</maintainer>
-  <maintainer email="Musa.Marcusso@de.bosch.com">Musa Morena Marcusso Manhaes</maintainer>
+  <maintainer email="musa.marcusso@de.bosch.com">Musa Morena Marcusso Manhaes</maintainer>
   <maintainer email="sebastian.scherer2@de.bosch.com">Sebastian Scherer</maintainer>
-  <maintainer email="LuizRicardo.Douat@de.bosch.com">Luiz Ricardo Douat</maintainer>
+  <maintainer email="luizricardo.douat@de.bosch.com">Luiz Ricardo Douat</maintainer>
 
   <author email="emre.ege@desistek.com.tr">Emre Ege</author>
-  <author email="Musa.Marcusso@de.bosch.com">Musa Morena Marcusso Manhaes</author>
+  <author email="musa.marcusso@de.bosch.com">Musa Morena Marcusso Manhaes</author>
   <author email="sebastian.scherer2@de.bosch.com">Sebastian Scherer</author>
-  <author email="LuizRicardo.Douat@de.bosch.com">Luiz Ricardo Douat</author>
+  <author email="luizricardo.douat@de.bosch.com">Luiz Ricardo Douat</author>
 
   <license>Apache-2.0</license>
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <run_depend>uuv_gazebo_ros_plugins</run_depend>
-  <run_depend>uuv_sensor_ros_plugins</run_depend>
+  <depend>xacro</depend>
+  <depend>uuv_gazebo_ros_plugins</depend>
+  <depend>uuv_sensor_ros_plugins</depend>
+
+  <test_depend>rostest</test_depend>
+  <test_depend>rosunit</test_depend>
 </package>
