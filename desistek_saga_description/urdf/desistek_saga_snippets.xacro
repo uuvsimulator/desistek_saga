@@ -18,7 +18,7 @@
   <xacro:property name="prop_mesh_file" value="file://$(find desistek_saga_description)/mesh/propeller.dae"/>
 
   <!-- Thruster macro with integration of joint and link-->
-  <xacro:macro name="thruster_macro" params="robot_namespace thruster_id *origin">
+  <!-- <xacro:macro name="thruster_macro" params="robot_namespace thruster_id *origin">
     <link name="${robot_namespace}/thruster_${thruster_id}">
       <visual>
         <geometry>
@@ -43,7 +43,7 @@
     </joint>
 
     <gazebo>
-      <plugin name="${robot_namespace}_${thruster_id}_thruster_model" filename="libthruster_ros_plugin.so">
+      <plugin name="${robot_namespace}_${thruster_id}_thruster_model" filename="libuuv_thruster_ros_plugin.so">
         <linkName>${robot_namespace}/thruster_${thruster_id}</linkName>
         <jointName>${robot_namespace}/thruster_${thruster_id}_joint</jointName>
         <thrusterID>${thruster_id}</thrusterID>
@@ -62,6 +62,19 @@
     <gazebo reference="${robot_namespace}/thruster_${thruster_id}">
       <selfCollide>false</selfCollide>
     </gazebo>
+  </xacro:macro> -->
+
+  <!-- Thruster joint and link snippet --> 
+  <xacro:macro name="thruster_macro"
+    params="robot_namespace thruster_id *origin">
+    <xacro:thruster_module_first_order_basic_fcn_macro
+      namespace="${robot_namespace}"
+      thruster_id="${thruster_id}"
+      mesh_filename="${prop_mesh_file}"
+      dyn_time_constant="0.05"
+      rotor_constant="0.00001">
+      <xacro:insert_block name="origin"/>
+    </xacro:thruster_module_first_order_basic_fcn_macro>
   </xacro:macro>
 
 </robot>
