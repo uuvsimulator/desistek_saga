@@ -2,6 +2,9 @@
 Changelog for package desistek_saga_control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.3.1 (2019-02-14)
+------------------
+
 0.3.0 (2018-07-30)
 ------------------
 * ADD YAML file with model parameter information

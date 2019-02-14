@@ -11,9 +11,11 @@ install(DIRECTORY mesh robots urdf launch
 
 if(CATKIN_ENABLE_TESTING)
   find_package(rostest REQUIRED)
-
-  foreach(TEST_LAUNCHERS
-    test/test_desistek_saga_model.launch
-    add_rostest(${TEST_LAUNCHERS}))
+  find_package(xacro REQUIRED)
+  find_package(rosunit REQUIRED)
+  foreach(T
+      test/test_urdf_files.test
+      )
+     add_rostest(${T})
   endforeach()
 endif()
