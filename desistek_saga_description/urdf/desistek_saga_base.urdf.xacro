@@ -15,7 +15,7 @@
      limitations under the License.
 -->
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
-  <xacro:include filename="$(find uuv_descriptions)/models/common/urdf/common.urdf.xacro"/>
+  <xacro:include filename="$(find uuv_descriptions)/urdf/common.urdf.xacro"/>
   <xacro:include filename="$(find uuv_sensor_ros_plugins)/urdf/sensor_snippets.xacro"/>
   <xacro:include filename="$(find desistek_saga_description)/urdf/desistek_saga_snippets.xacro"/>
   <xacro:include filename="$(find uuv_gazebo_ros_plugins)/urdf/snippets.xacro"/>
@@ -69,7 +69,7 @@
 
     <!-- Set up hydrodynamic plugin -->
     <gazebo>
-      <plugin name="${namespace}_uuv_plugin" filename="libunderwater_object_ros_plugin.so">
+      <plugin name="${namespace}_uuv_plugin" filename="libuuv_underwater_object_ros_plugin.so">
         <fluid_density>${rho}</fluid_density>
         <flow_velocity_topic>hydrodynamics/current_velocity</flow_velocity_topic>
         <debug>${debug}</debug>
