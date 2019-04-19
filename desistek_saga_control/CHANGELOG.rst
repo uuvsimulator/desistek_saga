@@ -2,8 +2,8 @@
 Changelog for package desistek_saga_control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.3.2 (2019-04-19)
+------------------
 * Set package format to 2
   Signed-off-by: Musa Morena Marcusso Manhães <musa.marcusso@de.bosch.com>
 * Contributors: Musa Morena Marcusso Manhães
