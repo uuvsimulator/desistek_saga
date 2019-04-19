@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>desistek_saga_description</name>
-  <version>0.3.1</version>
+  <version>0.3.2</version>
   <description>The robot description files for the Desistek SAGA ROV underwater vehicle</description>
 
   <maintainer email="emre.ege@desistek.com.tr">Emre Ege</maintainer>
