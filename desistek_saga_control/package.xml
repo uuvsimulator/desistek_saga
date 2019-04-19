@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<package>
+<package format="2">
   <name>desistek_saga_control</name>
   <version>0.3.1</version>
   <description>Configuration and launch files to control the Desistek SAGA ROV</description>
@@ -18,7 +18,7 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <run_depend>uuv_control_cascaded_pid</run_depend>
-  <run_depend>uuv_thruster_manager</run_depend>
-  <run_depend>desistek_saga_description</run_depend>
+  <exec_depend>uuv_control_cascaded_pid</exec_depend>
+  <exec_depend>uuv_thruster_manager</exec_depend>
+  <exec_depend>desistek_saga_description</exec_depend>
 </package>
